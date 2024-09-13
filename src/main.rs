@@ -154,7 +154,7 @@ async fn main() -> anyhow::Result<()> {
     assert_eq!(
         a.iter()
             .zip(b.iter())
-            .map(|(a, b)| a + b + pc.offset)
+            .map(|(a, b)| pc.offset + a + b)
             .collect::<Vec<f32>>(),
         res
     );
