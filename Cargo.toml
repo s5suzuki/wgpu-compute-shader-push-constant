@@ -1,0 +1,12 @@
+[package]
+name = "wgpu-compute-shader-push-constant"
+version = "0.1.0"
+edition = "2021"
+authors = ["shun suzuki <suzuki@hapis.k.u-tokyo.ac.jp>"]
+
+[dependencies]
+anyhow = "1.0.88"
+bytemuck = { version = "1.18.0", default-features = false, features = ["derive"] }
+rand = "0.8.5"
+tokio = { version = "1.40.0", features = ["full"] }
+wgpu = "22.1.0"
